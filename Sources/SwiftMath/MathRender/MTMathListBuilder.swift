@@ -612,6 +612,7 @@ public struct MTMathListBuilder {
             return mathColor
         } else if command == "colorbox" {
             // A color command has 2 arguments
+            let mathColor = MTMathTextColor()
             let mathColorbox = MTMathColorbox()
             let color = self.readColor()
             if color == nil {
